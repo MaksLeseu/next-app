@@ -1,5 +1,5 @@
 import {API} from "@/assets/api";
-import {CharacterType, ResponseType} from "@/assets/rick-and-morty-api";
+import HomeLink from "@/components/HomeLink";
 
 
 export async function getData() {
@@ -24,6 +24,9 @@ const Characters = async () => {
             <div>
                 Characters
                 {characters}
+                <div>
+                    <HomeLink />
+                </div>
             </div>
         );
     } catch (error) {
